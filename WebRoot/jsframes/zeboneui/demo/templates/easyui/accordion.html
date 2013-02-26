@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>index.html</title>
+
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="../../../vendor/easyui/themes/icon.css">
+		<link rel="stylesheet" type="text/css" href="../../../vendor/easyui/demo/demo.css">
+
+		<script data-main="../../js/apps/easyui/accordion/accordionMain" src="../../../vendor/requirejs/require.js"></script>
+
+		<!--
+		<link rel="stylesheet" type="text/css" href="../../../vendor/easyui/themes/bootstrap/easyui.css">
+		<script type="text/javascript" src="../../../vendor/easyui/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../../../vendor/easyui/src/easyloader.js"></script>
+		<script type="text/javascript" src="../../../vendor/easyui/plugins/jquery.panel.js"></script>
+		<script type="text/javascript" src="../../../vendor/easyui/plugins/jquery.accordion.js"></script>
+		-->
+	</head>
+
+	<body>
+		<div class="demo-info">
+			<div class="demo-tip icon-tip"></div>
+			<div>
+				Click on panel header to show its content.
+			</div>
+		</div>
+
+		<div class="easyui-accordion" style="width:500px;height:300px;">
+			<div title="模版子系统" data-option="iconCls:'icon-ok'" style="overflow:auto; padding:10px;">
+				<h3 style="color:#0099FF;">Accordion</h3>
+				<p>
+					Accordion is a part of easyui framework for jQuery. It lets you define your accordion component on web page more easily.
+				</p>
+			</div>
+
+			<div title="开发人员工具" data-option="iconCls:'icon-help'" style="padding:10px;">
+				<h3 style="color:#0099FF;">Second accordion</h3>
+				<p>
+					The accordion allows you to provide multiple panels and display one at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.
+				</p>
+			</div>
+
+			<div title="权限管理" data-option="iconCls:'icon-search'" style="padding:10px;">
+				<h3 style="color:#0099FF;">Third accordion</h3>
+				<p>
+					The accordion allows you to provide multiple panels and display one at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.
+				</p>
+			</div>
+		</div>
+
+		<h2>Basic DateBox</h2>
+		<div class="demo-info">
+			<div class="demo-tip icon-tip"></div>
+			<div>
+				Click the calendar image on the right side.
+			</div>
+		</div>
+		<div style="margin:10px 0;"></div>
+		<input class="easyui-datebox"/>
+
+	</body>
+</html>
+

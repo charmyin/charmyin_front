@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zebone 前端集成开发平台(EasyUI)</title>
+	
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../zebone.ico"/>
+	<link rel="stylesheet" type="text/css" href="../../../../vendor/easyui/themes/icon.css" />
+	<link rel="stylesheet" type="text/css" href="../../../css/easyui/main/index.css" />
+	<script data-main="../../../../app/js/apps/easyui/main/indexMain" src="../../../../vendor/requirejs/require.js"></script>
+  </head>
+  
+  <body style="overflow:hidden;">
+      <div class="easyui-layout" id="divLayout_Main" style="overflow:hidden;">
+      	<div region='north' title="Zebone 前端集成开发平台(EasyUI)" style="width:100%; height:100px;">asdf</div>
+      	<div region="west" id="divRegionWest_Main" title="Navigator 是个导航栏" style='width:280px;'>
+      		<div class="easyui-accordion" id="divAccordion_main" >
+      			
+      			<div title="模版子系统" id="divPanelModule_main" data-option="iconCls:'icon-ok'" style="width:100%; overflow-x:hidden; overflow-y:auto;">
+						<ul id="ulCatalogueTree_Main" class="easyui-tree" url="tree_data.json"></ul>
+				</div>
+	
+				<div title="开发人员工具" data-option="iconCls:'icon-help'" style="padding:10px;">
+					<h3 style="color:#0099FF;">Second accordion</h3>
+					<p>
+						The accordion allows you to provide multiple panels and display one at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.
+					</p>
+				</div>
+	
+				<div title="权限管理" data-option="iconCls:'icon-search'" style="padding:10px;">
+					<h3 style="color:#0099FF;">Third accordion</h3>
+					<p>
+						The accordion allows you to provide multiple panels and display one at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.
+					</p>
+				</div><!---->
+      		</div>
+      	</div>
+      	<div region="center" split="true" title="content 是内容" style="width:auto;">asdf</div>
+      	<div region="south" style="width:100%; height:24px; text-align: center; padding: 0; margin:0; line-height:23px; overflow:hidden;">
+      		Powered by  Zebone © 2011-2013  &nbsp;<a href="http://www.zebone.cn" style="text-decoration: none; margin:0;padding:0;" target="_blank">http://www.zebone.cn</a>
+      	</div>
+      </div>
+      <!--等待界面-->
+	  <div id='divLoading_Main'><span>登录成功~</span></div>
+  </body>
+</html>
