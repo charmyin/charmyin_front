@@ -5,6 +5,10 @@ define(['jquery', 'easyloader'], function ($, easyloader) {
 			$('#divLoading_Main').fadeOut("slow", function () {
 				$(this).remove();
 			});
+		},
+		openMainTab: function (nodeId){
+			console.log(nodeId);
+			$.parser.parse();
 		}
 	}
 });

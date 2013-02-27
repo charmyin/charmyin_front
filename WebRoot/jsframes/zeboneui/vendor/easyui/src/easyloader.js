@@ -345,7 +345,7 @@
 		base:'.',
 		theme:'bootstrap',
 		css:true,
-		locale:null,
+		locale:'zh_CN',
 		timeout:2000,
 	
 		load: function(name, callback){

@@ -65,8 +65,12 @@ define(['easyloader', 'jquery', 'cookiejs'], function (EasyLoader, $, cookiejs) 
 					//TODO 需要加密
 					cookiejs.set('loginUassword', password);
 				}
-				window.location.href="../main/index.html";
+				
 				//alert("表单提交中，cookie中存入用户名密码，刷新后显示~");
+			}
+			
+			if($('#inputDesktop_login').is(':checked')){
+				window.location.href="http://localhost:8080/bbrj/jsframes/jQueryDesktop/index.html";
 			}else{
 				window.location.href="../main/index.html";
 			}

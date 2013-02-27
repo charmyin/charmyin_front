@@ -5,6 +5,7 @@
  ***/
 
 requirejs.config({
+	waitSeconds: 0,
 	baseUrl: "../../../../",//此处根目录为引用requirejs所对应的根目录，由于使用了base标签，所以根目录为zeboneui文件夹
 	paths: {
 		'jquery' : './vendor/jquery/jquery',
@@ -67,6 +68,5 @@ require(['domReady', 'loginapp', 'cookiejs', 'validRules', 'common'], function (
 		loginapp.setEnterPressEvent(loginapp);
 		
 	});
-	
 
 });

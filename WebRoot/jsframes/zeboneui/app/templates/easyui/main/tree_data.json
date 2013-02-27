@@ -6,10 +6,16 @@
 		"text":"Fruits",
 		"children":[{
 			"id":11,
-			"text":"apple"
+			"text":"apple",
+			"attributes": {
+				"url": "http://www.apple.com"
+			}
 		},{
 			"id":12,
-			"text":"orange"
+			"text":"orange",
+			"attributes": {
+				"url": "http://www.orange.com"
+			}
 		}]
 	},{
 		"id":2,
