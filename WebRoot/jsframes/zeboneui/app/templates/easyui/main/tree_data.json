@@ -8,13 +8,13 @@
 			"id":11,
 			"text":"apple",
 			"attributes": {
-				"url": "http://www.apple.com"
+				"url": "http://192.168.1.199:8080/bbrj/jsframes/backbone/index.html"
 			}
 		},{
 			"id":12,
 			"text":"orange",
 			"attributes": {
-				"url": "http://www.orange.com"
+				"url": "http://192.168.1.199:8080/bbrj/jsframes/backbone-directory/web/index.html"
 			}
 		}]
 	},{
@@ -23,52 +23,16 @@
 		"state":"closed",
 		"children":[{
 			"id":21,
-			"text":"tomato"
+			"text":"tomato",
+			"attributes": {
+				"url": "http://www.sina.com"
+			}
 		},{
 			"id":22,
 			"text":"carrot"
 		},{
 			"id":23,
 			"text":"cabbage"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
-		},{
-			"id":24,
-			"text":"potato"
 		},{
 			"id":24,
 			"text":"potato"

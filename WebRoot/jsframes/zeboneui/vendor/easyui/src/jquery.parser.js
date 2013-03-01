@@ -11,9 +11,12 @@
  */
 
 (function($){
+	console.log("I have been loaded, parser");
 	$.parser = {
 		auto: true,
-		onComplete: function(context){},
+		onComplete: function(context){
+			console.log("i have been done, onComplete~ default");
+		},
 		plugins:['draggable','droppable','resizable','pagination',
 		         'linkbutton','menu','menubutton','splitbutton','progressbar',
 				 'tree','combobox','combotree','combogrid','numberbox','validatebox','searchbox',
