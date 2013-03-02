@@ -9,6 +9,7 @@
  * http://www.jeasyui.com/license_commercial.php
  * 
  */
+console.log("easyload has executed");
 (function(){
 	var modules = {
 		draggable:{
@@ -198,10 +199,8 @@
 		script.type = 'text/javascript';
 		script.language = 'javascript';
 		script.src = url;
-		console.log(url + '------------------------------------- has before loaded -----state is loaded in loadJs');
 		script.onload = script.onreadystatechange = function(){
 			if (!done && (!script.readyState || script.readyState == 'loaded' || script.readyState == 'complete')){
-				console.log(url + '------------------------------------- has been loaded -----state is loaded in loadJs');
 				done = true;
 				script.onload = script.onreadystatechange = null;
 				if (callback){
@@ -210,7 +209,6 @@
 			}
 		};
 		document.getElementsByTagName("head")[0].appendChild(script);
-		console.log("******************************************************"+document.getElementsByTagName("head")[0]);
 	}
 	
 	function runJs(url, callback){
@@ -318,7 +316,6 @@
 						loadMm();
 					});
 				} else if (queues[m] == 'loaded'){
-					console.log("-++++++++++++++++++++++--eayloader    "+mm[0]+'    has been loaded');
 					mm.shift();
 					loadMm();
 				} else {
@@ -328,7 +325,6 @@
 					}
 				}
 			} else {
-				console.log("----------------------eayloader    "+'---------------'+'    has been loaded');
 				if (easyloader.locale && doLoad == true && locales[easyloader.locale]){
 					var url = easyloader.base + 'locale/' + locales[easyloader.locale];
 					runJs(url, function(){
@@ -389,10 +385,8 @@
 	window.using = easyloader.load;
 	
 	if (window.jQuery){
-		console.log("jquery has been loaded");
 		jQuery(function(){
 			easyloader.load('parser', function(){
-				console.log("I am parser a parser~ load parser");
 				jQuery.parser.parse();
 			});
 		});

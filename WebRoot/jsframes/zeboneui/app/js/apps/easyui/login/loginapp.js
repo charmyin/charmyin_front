@@ -4,17 +4,8 @@
  * title: make the login powerful
  ***/
 
-define(['easyloader', 'jquery', 'cookiejs'], function (EasyLoader, $, cookiejs) {
+define(['cookiejs'], function (cookiejs) {
 	return {
-		//移除加载页面
-		removeLoadingDiv : function () {
-			$("#loginwindow").window('close');
-			$('#divLoading').fadeOut("slow", function () {
-				$(this).remove();
-				$("#loginwindow").window('open');
-				document.authForm.username.focus();
-			});
-		},
 		//从cookie获取用户信息
 		getUserInfoFromCookie: function () {
 			var userName = cookiejs.get('loginUserName');

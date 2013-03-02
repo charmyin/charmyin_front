@@ -1,10 +1,22 @@
-define(['jquery', 'easyloader'], function ($, easyloader) {
+define(function () {
 	return {
 		//移除加载页面
 		removeLoadingDiv : function () {
 			$('#divLoading_Main').fadeOut("slow", function () {
 				$(this).remove();
 			});
+		},
+		changeTheme: function (theme){
+			var link = $('head').find('link').each(function () {
+				if($(this).attr('href').indexOf('http:') === 0){
+					//http://localhost:8080/bbrj/jsframes/zeboneui/vendor/easyui/themes/bootstrap/layout.css
+					console.log("this is old : " + $(this).attr('href'));
+					var newHref = $(this).attr('href').replace(/themes\/\w*/, 'themes/'+theme);
+					$(this).attr('href',newHref);
+					console.log("This is new :" + newHref);
+				}
+			});
+			//link.attr('href', '/easyui/themes/'+theme+'/easyui.css');
 		},
 		openMainTab: function (node){
 			var isNotExisted = true;//tab不存在

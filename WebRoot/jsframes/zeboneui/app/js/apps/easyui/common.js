@@ -4,7 +4,7 @@
  * title: Put some common js code together~
  ***/
 
-define(['jquery', 'easyloader'], function ($, EasyLoader) {
+define(function () {
 	return {
 		//设定easyui的初始化参数
 		configEasyUI: function(event){

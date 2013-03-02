@@ -5,7 +5,7 @@
  * Info: This bases on AMD , and the validatebox.js must have been loaded 
  ***/
 
-define(['jquery'], function ($) {
+define(function () {
 	return function () {
 		//固定长度
 		$.extend($.fn.validatebox.defaults.rules, {

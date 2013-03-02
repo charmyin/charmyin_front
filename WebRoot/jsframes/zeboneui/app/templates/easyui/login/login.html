@@ -8,6 +8,40 @@
 		<link rel="shortcut icon" type="image/x-icon" href="../../../zebone.ico"/>
 		<link rel="stylesheet" type="text/css" href="../../../../vendor/easyui/themes/icon.css" />
 		<link rel="stylesheet" type="text/css" href="../../../css/easyui/login/login.css" />
+		<script src="../../../../vendor/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+		<script src="../../../../vendor/easyui/easyloader.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			//监视easyloader加载组件完成的事件
+			easyloader.onLoad = function (event) {
+				//去除加载mask效果
+				if(event === 'parser'){
+					$.parser.onComplete = function (context) {
+						if($("#divLoading").length > 0){
+							$("#loginwindow").window('close');
+							$('#divLoading').fadeOut("slow", function () {
+								$(this).remove();
+								$("#loginwindow").window('open');
+								document.authForm.username.focus();
+							});
+						}
+					};
+				}
+				
+				if(typeof(event) !== 'string' && $.inArray("validatebox", event) !== -1){
+					//添加验证规则 
+					//固定长度
+					$.extend($.fn.validatebox.defaults.rules, {
+						fixedLength: {
+							validator: function(value, param){
+								return value.length === param[0];
+							},
+							message: '字符串长度应为{0}'
+						}
+					});
+				}
+			};
+			easyloader.load('plugins/jquery.form.js');
+		</script>
 		<script data-main="../../../../app/js/apps/easyui/login/loginmain" src="../../../../vendor/requirejs/require.js"></script>
 	</head>
 	<body>
