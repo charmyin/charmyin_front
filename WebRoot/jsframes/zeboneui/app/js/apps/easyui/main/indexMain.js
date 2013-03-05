@@ -38,7 +38,6 @@ requirejs.config({
 require(['indexApp', 'backbone', 'underscore'], function (indexApp, backbone, _) {
 	//jquery加载完成后
 		$(function () {
-			console.log("hello");
 			$(".divOnChangeTheme").click(function () {
 				indexApp.changeTheme($(this).attr('value'));
 			});

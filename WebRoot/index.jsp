@@ -37,6 +37,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<a href="./api/bootstrap/docs/index.html" target="_blank">Bootstrap</a>
    		<br/>
    		<a href="./api/jqapi/index.html" target="_blank">Jpapi</a>
+   		<br/>
+   		<a href="./api/d3/test/data/sample.html" target="_blank">d3</a>
+   		<br/>
+   		<a href="./api/jqplot/examples/index.html" target="_blank">jqplot</a>
    	</div>
    	<div>
    		<h2>DEMOS</h2>

@@ -9,7 +9,6 @@
  * http://www.jeasyui.com/license_commercial.php
  * 
  */
-console.log("easyload has executed");
 (function(){
 	var modules = {
 		draggable:{

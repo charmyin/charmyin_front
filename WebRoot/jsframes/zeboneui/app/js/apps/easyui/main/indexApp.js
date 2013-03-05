@@ -31,7 +31,7 @@ define(function () {
 				$('#divTab_Main').tabs('add', {
 					id: 'divTab_Main_' + node.id,//tab的Id格式为divTab_Main_12
 					title: node.text,
-					content: '<iframe id="iframeTab_'+ node.id+'" src="'+ node.attributes['url']+'" style="height:100%;width:100%;border:none; overflow:hidden;" scrolling="no"></iframe>',// '',
+					content: '<iframe id="iframeTab_'+ node.id+'" src="'+ node.attributes['url']+'" style="border:none; overflow:auto;"></iframe>',// '',
 					closable: true,
 					fit: true,
 					tools:[{
@@ -41,7 +41,7 @@ define(function () {
 						}
 					}]
 				});
-				$('#divTab_Main_'+ node.id ).css({'padding':'0', 'margin':'0', 'overflow':'hidden' });
+				$('#divTab_Main_'+ node.id ).css({'padding':'0', 'margin':'0', 'overflow':'auto' });
 			}
 		}
 	}
