@@ -301,6 +301,229 @@
 				"url": "../../../../../../../bbrj/api/easyui/demo/tree/animation.html"
 			}
 		}]
+	},{
+		"id":104,
+		"text":"ButtonMenu 按钮与菜单",
+		"state":"closed",
+		"children":[{
+			"id":10401,
+			"text":"LinkButton 基础",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/linkbutton/basic.html"
+			}
+		},{
+			"id":10402,
+			"text":"LinkButton 图标顺序",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/linkbutton/iconalign.html"
+			}
+		},{
+			"id":10403,
+			"text":"LinkButton 平实风格",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/linkbutton/plain.html"
+			}
+		},{
+			"id":10404,
+			"text":"MenuButton 菜单按钮",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/menubutton/basic.html"
+			}
+		},{
+			"id":10405,
+			"text":"MenuButton 菜单按钮操作",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/menubutton/actions.html"
+			}
+		},{
+			"id":10406,
+			"text":"Menu 右击菜单（基础）",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/menu/basic.html"
+			}
+		},{
+			"id":10407,
+			"text":"Menu 右击菜单（自定义）",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/menu/customitem.html"
+			}
+		},{
+			"id":10408,
+			"text":"Menu 右击菜单（绑定事件）",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/menu/events.html"
+			}
+		},{
+			"id":10409,
+			"text":"SplitButton 分隔按钮（基础）",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/splitbutton/basic.html"
+			}
+		},{
+			"id":10410,
+			"text":"SplitButton 分隔按钮（绑定事件）",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/easyui/demo/splitbutton/actions.html"
+			}
+		}]
+	},{
+		"id":105,
+		"text":"Layout 排版布局",
+		"state":"closed",
+		"children":[{
+			"id":10501,
+			"text":"Panel 面板(嵌板)",
+			"state":"closed",
+			"children":[{
+				"id":1050101,
+				"text":"Panel 基础",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/panel/basic.html"
+				}
+			},{
+				"id":1050102,
+				"text":"Panel 面板工具",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/panel/paneltools.html"
+				}
+			},{
+				"id":1050103,
+				"text":"Panel 内容载入",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/panel/loadcontent.html"
+				}
+			},{
+				"id":1050104,
+				"text":"Panel 自定义工具",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/panel/customtools.html"
+				}
+			},{
+				"id":1050105,
+				"text":"Panel 面板嵌套",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/panel/nestedpanel.html"
+				}
+			}]
+		},{
+			"id":10502,
+			"text":"Tab 垂片",
+			"state":"closed",
+			"children":[{
+				"id": 1050201,
+				"text": "Tab 基础",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/basic.html"
+				}
+			},{
+				"id": 1050202,
+				"text": "Tab 垂片嵌套",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/nestedtabs.html"
+				}
+			},{
+				"id": 1050203,
+				"text": "Tab 工具",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/tabstools.html"
+				}
+			},{
+				"id": 1050204,
+				"text": "Tab 自适应高度",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/autoheight.html"
+				}
+			},{
+				"id": 1050205,
+				"text": "Tab 位置",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/tabposition.html"
+				}
+			},{
+				"id": 1050206,
+				"text": "Tab 工具条",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/striptools.html"
+				}
+			},{
+				"id": 1050207,
+				"text": "Tab 悬挂事件",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/tabs/hover.html"
+				}
+			}]
+		},{
+			"id":10503,
+			"text":"Accordion 手风琴菜单",
+			"state":"closed",
+			"children":[{
+				"id":1050301,
+				"text":"Accordion 基础样式",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/accordion/basic.html"
+				}
+			},{
+				"id":1050302,
+				"text":"Accordion ajax交互",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/accordion/ajax.html"
+				}
+			},{
+				"id":1050303,
+				"text":"Accordion 绑定事件",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/accordion/actions.html"
+				}
+			},{
+				"id":1050304,
+				"text":"Accordion 工具",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/accordion/tools.html"
+				}
+			}]
+			
+		},{
+			"id":10504,
+			"text":"Layout 布局",
+			"state":"closed",
+			"children":[{
+				"id":1050401,
+				"text":"Layout 基础样式",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/basic.html"
+				}
+			},{
+				"id":1050402,
+				"text":"Layout 嵌套样式",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/nestedlayout.html"
+				}
+			},{
+				"id":1050403,
+				"text":"Layout 复杂布局",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/complex.html"
+				}
+			},{
+				"id":1050404,
+				"text":"Layout 固定布局（不可缩小）",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/nocollapsible.html"
+				}
+			},{
+				"id":1050405,
+				"text":"Layout 自适应窗体",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/full.html"
+				}
+			},{
+				"id":1050406,
+				"text":"Layout 添加删除模块",
+				"attributes": {
+					"url": "../../../../../../../bbrj/api/easyui/demo/layout/addremove.html"
+				}
+			}]
+		}]
 	}]
 },{
 	"id":10010,
