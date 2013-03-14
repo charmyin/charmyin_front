@@ -23,7 +23,7 @@
 
 
 
-
+.slide[data-layout="zebonehead"][data-key="title"],
 .slide[data-layout="normal"] [data-key="title"],
 .slide[data-layout="double"] [data-key="title"],
 .slide[data-layout="double-subtitle"] [data-key="title"] {
@@ -48,6 +48,8 @@
     font-weight: bold;
     z-index: 5;
 }
+
+
 .slide[data-layout="subtitle"] [data-key="title"] {
     display: block;
     left: 80px;
@@ -66,6 +68,64 @@
     top: 140px;
     width: 520px;
     min-height: 300px;
+    z-index: 2;
+}
+
+/** Zebone Show**/
+.slide[data-layout="zebonehead"]{
+	background:url(../images/template/zebonehead.png); 
+	background-size:cover;
+}
+
+.slide[data-layout="zebonehead"] [data-key="title"] {
+    display: block;
+    left: 20px;
+    bottom: 110px;
+    width: 380px;
+    min-height: 2em;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 5;
+}
+.slide[data-layout="zebonehead"] [data-key="content"] {
+    display: block;
+    text-align:right;
+    left: 300px;
+    top: 390px;
+    width: 300px;
+    color:#777777;
+    min-height: 50px;
+    z-index: 2;
+}
+
+
+.slide[data-layout="zebonebody"]{
+	background:url(../images/template/zebonebody.png); 
+	background-size:cover;
+	z-index:5;
+}
+
+.slide[data-layout="zebonebody"] [data-key="title"] {
+    display: block;
+    left: 10px;
+    top: 20px;
+    width: 300px;
+    min-height: 2em;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.slide[data-layout="zebonebody"] [data-key="content"] {
+	font-size:14px;
+    display: block;
+    left: 43px;
+    top: 77px;
+    width: 560px;
+    color:#777777;
+    min-height: 363px;
     z-index: 2;
 }
 .slide[data-layout="double"] [data-key="content"] {

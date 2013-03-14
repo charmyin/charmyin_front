@@ -40,7 +40,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<br/>
    		<a href="./api/d3/test/data/sample.html" target="_blank">d3</a>
    		<br/>
-   		<a href="./api/jqplot/examples/index.html" target="_blank">jqplot</a>
+   		<br/>
+   		<h4>jquery plugins</h4>
+   			<a href="api/jquery plugins/layout/demos/index.html" target="_blank">&nbsp;&nbsp;&nbsp;1.Jquery Layout</a>
+   			<br/>
+   			<a href="api/jquery plugins/jqueryui/index.html" target="_blank">&nbsp;&nbsp;&nbsp;2.Jquery UI</a>
+   			<br/>
+   			<a href="api/jquery plugins/jqueryui/development-bundle/demos/accordion/index.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 Accordion</a>
+   			
    	</div>
    	<div>
    		<h2>DEMOS</h2>
@@ -54,6 +61,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<br/>
    		<a href="./jsframes/jQueryDesktop/index.html" target="_blank">Jquery Desktop</a>
    		<br/>
+   		<a href="./jsframes/h5slides/index.html" target="_blank">H5Slides</a>
+   		<br/>
+   		<a href="./jsframes/threejs/index.html" target="_blank">threejs</a>
    	</div>
   </body>
 </html>

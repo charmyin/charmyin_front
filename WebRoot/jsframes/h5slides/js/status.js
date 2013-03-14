@@ -24,7 +24,7 @@ define(['data', 'design'], function (dataManager, designManager) {
                 var currentPage = 0;
                 var currentSlide = dataManager.getSlideList()[currentPage];
 
-                vm.title(dataManager.getTitle()),
+                vm.title(dataManager.getTitle());
                 vm.currentDesign(dataManager.getDesign());
                 vm.currentPage(currentPage);
                 vm.currentTpl(currentSlide.template);

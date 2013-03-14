@@ -40,7 +40,7 @@ define(['data', 'vm'], function (dataManager, vm) {
             textArray = data.value.split('\n');
             textArray.forEach(function (text) {
                 var li = $('<li></li>');
-                li.text(text);
+                li.html(text);
                 ul.append(li);
             });
             dom.empty().append(ul);

@@ -6,8 +6,8 @@
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-<title>H5Slides</title>
-<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+<title>Zebone</title>
+<link rel="stylesheet" href="../../api/bootstrap/docs/assets/css/bootstrap.css">
 <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -17,9 +17,9 @@
 <div id="editor" class="window">
   <div id="topbar" class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <a class="brand" href="#">H5Slides</a>
+      <a class="brand" href="#">Zebone</a>
       <ul class="nav" id="title-label-wrapper" data-bind="visible: !editingTitle()">
-          <li><a href="#" id="label-title" data-bind="text: titleDisplay, click: editTitle"></a></li>
+          <li><!--<a href="#" id="label-title" data-bind="text: titleDisplay, click: editTitle"></a>--><a href="#" id="label-title">述职演讲</a></li>
       </ul>
       <form class="navbar-form pull-left" id="title-editor-wrapper" data-bind="visible: editingTitle" onsubmit="return false;">
           <input type="text" class="span2" id="input-title" placeholder="Input Title here..." data-bind="value: title, hasfocus: editingTitle">
@@ -113,7 +113,7 @@
   <div id="content">
     <div id="sidebar" class="span3">
       <div id="template-panel">
-        <h3>Template</h3>
+        <h3>模板</h3>
         <ul id="template-list" class="thumbnails" data-bind="foreach: tplList">
           <li class="span1" data-bind="css: {active: key == $root.currentTpl()}">
             <a href="#" class="thumbnail" data-bind="click: $parent.clickTpl">
@@ -124,7 +124,7 @@
         <!-- <button class="btn">More...</button> -->
       </div>
       <div id="page-nav">
-        <h3>Pagination
+        <h3>幻灯片
           <div class="btn-group pull-right">
             <button class="btn" data-bind="click: prevPage"><i class="icon-chevron-up"></i></button>
             <button class="btn" data-bind="click: nextPage"><i class="icon-chevron-down"></i></button>
@@ -152,7 +152,7 @@
     </div>
     <div class="vr"></div>
     <div id="editor-stage" class="stage" data-bind="attr: {'data-design': currentDesign}">
-      <div id="editor-slide" class="slide" data-bind="attr: {'data-layout': currentLayout}">
+      <div id="editor-slide" class="slide" style="" data-bind="attr: {'data-layout': currentLayout}">
         <div id="slide-title" data-key="title" data-bind="click: editItem"></div>
         <div id="slide-subtitle" data-key="subtitle" data-bind="click: editItem"></div>
         <div id="slide-content" data-key="content" data-bind="click: editItem"></div>
@@ -166,6 +166,7 @@
 
 <div id="player" class="window">
   <div id="player-stage" class="stage">
+  	
     <div id="player-slides-container">
       <!--div class="slide next prev current">
         <div data-key=""></div>
@@ -300,13 +301,14 @@
   </div>
 </div>
 
-<script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
-<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
-<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
 
-<script src="http://knockoutjs.com/downloads/knockout-2.2.1.debug.js"></script>
+<script src="../../api/jquery plugins/jqueryui/js/jquery-1.9.1.js"></script>
+<script src="../../api/bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="../../api/bootstrap/js/bootstrap-button.js"></script>
+<script src="../../api/bootstrap/js/bootstrap-modal.js"></script>
+<script src="../../api/bootstrap/js/bootstrap-tab.js"></script>
+
+<script src="../../api/knockoutjs/knockout-2.2.1.debug.js"></script>
 
 <script data-main="js/main" src="js/require.js"></script>
 

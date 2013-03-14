@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Layout Example</title>
+<script type="text/javascript" src="../../../easyui/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../jquery.layout-latest.js"></script>
+<link rel="stylesheet" href="../../jqueryui/development-bundle/themes/base/jquery.ui.all.css">
+<script src="../../jqueryui/js/jquery-ui-1.10.1.custom.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('body').layout({ applyDemoStyles: true });
+	$("#accordion").accordion({
+		heightStyle: "fill"
+	});
+});
+</script>
+</head>
+<body>
+<div class="ui-layout-center">Center
+	<p><a href="http://layout.jquery-dev.net/demos.html">Go to the Demos page</a></p>
+	<p>* Pane-resizing is disabled because ui.draggable.js is not linked</p>
+	<p>* Pane-animation is disabled because ui.effects.js is not linked</p>
+</div>
+<div class="ui-layout-north">North</div>
+<div class="ui-layout-south">South</div>
+<div class="ui-layout-east">East</div>
+<div class="ui-layout-west">
+	<div style="height:99%; width:99%;">
+		<div id="accordion" style="font-size:12px;">
+			<h3>Section 1</h3>
+			<div>
+				<p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+			</div>
+			<h3>Section 2</h3>
+			<div>
+				<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+			</div>
+			<h3>Section 3</h3>
+			<div>
+				<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis.</p>
+				<ul>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

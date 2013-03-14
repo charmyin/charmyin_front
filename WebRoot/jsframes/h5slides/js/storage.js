@@ -12,10 +12,12 @@ define(function () {
         if (dataStr) {
             data = JSON.parse(dataStr);
         }
+        console.log(data);
         console.log('read');
         return data;
     }
     function saveData(data) {
+    	 console.log("out"+ JSON.stringify(data));
         try {
             storage.setItem('h5slides-data', JSON.stringify(data));
             console.log('saved', (new Date).valueOf());
