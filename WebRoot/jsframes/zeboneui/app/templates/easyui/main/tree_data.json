@@ -657,10 +657,26 @@
 		}]
 	},{
 		"id":300102,
+		"text":"Bootstrap样例",
+		"children":[{
+			"id":30010201,
+			"text":"Bootstrap",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/bootstrap/docs/index.html"
+			}
+		},{
+			"id":30010202,
+			"text":"Flat-UI",
+			"attributes": {
+				"url": "../../../../../../../bbrj/api/flatui/index.html"
+			}
+		}]
+	},{
+		"id":300103,
 		"text":"娱乐一下下",
 		"state":"closed",
 		"children":[{
-			"id":3001021,
+			"id":3001031,
 			"text":"sina",
 			"attributes": {
 				"url": "http://www.sina.com"
