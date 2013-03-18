@@ -2,3 +2,32 @@
 @import url(editor.css);
 @import url(sidebar.css);
 @import url(player.css);
+/**右上侧斜的title 述职演讲-殷昌明***/
+.div_toprighttitle{
+	padding:0;
+	margin:31px 0 0 0;
+	width:200px;
+	height:30px;
+	background:orange;
+	line-height:30px;
+	border:2px solid yellow;
+	text-align:center;
+	float:right;
+	position:absolute;
+	right:20px;  
+	-webkit-transform:rotate(45deg);
+	position:absolute;
+	right:-45px;
+	z-index:-10;
+}
+
+.div_toprighttitle p{
+	padding:0;
+	margin:0;
+	line-height:30px;
+	font-weight:bold;
+}
+
+#div_playerstateRightTitle{
+	z-index:120;
+}

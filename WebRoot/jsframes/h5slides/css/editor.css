@@ -1,7 +1,7 @@
 .window {position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
 .layer {position: absolute; left: 0; top: 0; width: 0; height: 0;}
 
-#editor {z-index: 1; display: -webkit-box; -webkit-box-orient: vertical;}
+#editor {z-index: 1; display: -webkit-box; -webkit-box-orient: vertical;overflow:hidden;}
 #topbar {position: static;}
 #topbar .navbar-inner {padding: 0 20px; z-index: 1;}
 #toolbar {position: static;}
@@ -22,3 +22,5 @@
 #my-img-list .thumbnail {min-height: 80px; height: 80px; overflow: hidden; margin-bottom: 1em;}
 
 #modals {}
+
+
