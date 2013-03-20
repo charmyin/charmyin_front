@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery mobile demo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.3.0.css"/>
+		<script type="text/javascript" src="js/mobile/jquery.js"></script>
+		<script type="text/javascript" src="js/mobile/jquery.mobile-1.3.0.js"></script>
+		<style type="text/css">
+			#div_index div[data-role=header]{
+			}
+			#div_index div[data-role=header] h1 img{
+				width:40px;
+				height:40px;
+			}
+			#div_index div[data-role=header] p{
+				text-align:center;
+				font-weight:bold;
+				font-size:22px;
+				padding:0;
+				margin:0;
+			}
+			.div_toprighttitle {
+				-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
+				-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
+				box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
+				padding: 0;
+				color:blue;
+				font-size:18px;
+				font-weight:bold;
+				margin: 31px 0 0 0;
+				width: 200px;
+				height: 30px;
+				background: #F7CF57;
+				line-height: 30px;
+				text-indent: 44px;
+				border: 2px solid white;
+				float: right;
+				position: absolute;
+				-webkit-transform: rotate(45deg);
+				position: absolute;
+				right: -78px;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<div data-role="page" id="div_index" data-theme="d">
+			<div class="div_toprighttitle">
+				Zebone ©
+			</div>
+			<div data-role="header"  >
+				<h1><img src="img/logo.png"/></h1>
+				<p>健康小屋</p>
+			</div>
+			<div data-role="content" style="padding-top:8px;">
+				<p style="text-align:center;margin:0px;">
+					<a href="#" data-role="button" data-icon="grid" data-iconpos="top" data-inline="true" style="width:40%;margin:0px;" data-theme="b">登录</a>
+					<a href="#" data-role="button" data-icon="edit" data-iconpos="top" data-inline="true" style="width:30%;margin:0px;" data-theme="e">注册</a>
+				</p>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#bar">View internal page</a></li>
+					<li><a href="testdemo/newpage.html">New Page</a></li>
+				</ul>
+			</div>
+			<div data-role="footer">
+				<h4>Powered by  Zebone © 2011-2013  &nbsp;</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="bar">
+			<div data-role="header">
+				<h1>Bar</h1>
+			</div>
+			
+			<div data-role="content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p><a href="#foo">Back to foo</a></p>
+				<p><a href="testdemo/dialog.html" data-role="button" data-rel="dialog" data-transition="pop">笑话一个</a></p>
+			</div>
+			
+			<div data-role="footer" data-theme="b">
+				<h4>Powered by  Zebone © 2011-2013  &nbsp;</h4>
+			</div>
+		</div>
+	</body>
+</html>

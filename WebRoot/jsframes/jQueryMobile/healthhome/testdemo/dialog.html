@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>dialog</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.3.0.css"/>
+		<script type="text/javascript" src="../js/mobile/jquery.js"></script>
+		<script type="text/javascript" src="../js/mobile/jquery.mobile-1.3.0.js"></script>
+		<script type="text/javascript">
+			$(funtion() {
+				
+			});
+			
+			function clickCancel() {
+				$("#dialog").dialog("close");
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div data-role="dialog" id="dialog">
+			<div data-role="header" data-theme="d">
+				<h1>我是一个提示框</h1>
+			</div>
+			<div data-role="content">
+				<h1>想开玩笑么</h1>
+				<p>玛雅人说，去年地球会爆炸，我在想，现在的自己是不是已经在天堂。。。。好吧，天堂应该不用上班了吧~如果你按了确定，那么世界就会毁灭，不信，你试试看！~</p>
+				<!--<a href="../index.html" data-role="button" data-rel="back" data-theme="b">确定</a>
+				<a href="javascript:clickCancel();" data-role="button" data-rel="back" data-theme="b">取消</a>
+				-->
+			</div>
+		</div>
+	</body>
+</html>

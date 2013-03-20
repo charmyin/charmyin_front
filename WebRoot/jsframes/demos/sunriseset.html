@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>radial-gradient()_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+body{
+	background:deepskyblue;
+	overflow:hidden;
+	-webkit-animation:animations 1000s linear forwards;
+}
+.test{
+	border:none;
+	width:100px;
+	height:100px;
+	position:absolute;
+	right:100%;
+	bottom:0;
+	border-radius:500px;
+	background:-webkit-radial-gradient(center center,circle,#f00 16px,#ff0 25px,rgba(256, 256, 256,0.1) 50px);
+	background:radial-gradient(center center,circle,#f00 10px,#ff0 15px,deepskyblue 50px);
+	-webkit-animation:animationstest 1000s linear forwards;
+}
+
+@-webkit-keyframes animationstest{
+	0%{right:94%;bottom:-100px;}
+	10%{right:90%;bottom:18%;}
+	20%{right:80%;bottom:32%;}
+	30%{right:70%;bottom:42%}
+	50%{right:60%;bottom:48%;}
+	55%{right:50%;bottom:50%;}
+	60%{right:40%;bottom:48%;}
+	70%{right:30%;bottom:42%;}
+	80%{right:20%;bottom:32%;}
+	90%{right:10%;bottom:18%;}
+	100%{right:0px;bottom:-100px;}
+}
+
+@-webkit-keyframes animations{
+	0%{background-color:black;}
+	20%{background-color:deepskyblue;}
+	50%{background-color:deepskyblue;}
+	80%{background-color:deepskyblue;}
+	100%{background-color:black;}
+}
+
+@keyframes animations{
+	0%{background-color:black;}
+	 
+	50%{background-color:deepskyblue;}
+	 
+	100%{background-color:black;}
+}
+
+</style>
+</head>
+<body>
+	<div class="test"></div>
+	<div class="cloud1"></div>
+</body>
+</html>
+			

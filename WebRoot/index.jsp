@@ -18,6 +18,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<style type="text/css">
+		a{
+			margin:20px;
+			line-height:30px;
+		}
+		
+		
+	</style>
   </head>
   
   <body>
@@ -35,6 +43,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<a href="./api/easyui/demo/index.html" target="_blank">EasyUI</a>
    		<br/>
    		<a href="./api/bootstrap/docs/index.html" target="_blank">Bootstrap</a>
+   		<br/>
+   		<a href="./api/flatui/index.html" target="_blank">FlatUI</a>
    		<br/>
    		<a href="./api/jqapi/index.html" target="_blank">Jpapi</a>
    		<br/>
@@ -64,6 +74,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<a href="./jsframes/h5slides/index.html" target="_blank">H5Slides</a>
    		<br/>
    		<a href="./jsframes/threejs/index.html" target="_blank">threejs</a>
+   		<br/>
+   		<a href="./jsframes/jQueryMobile/index.html" target="_blank">jQuery Mobile</a>
    	</div>
   </body>
 </html>
