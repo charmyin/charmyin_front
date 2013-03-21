@@ -52,6 +52,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		<br/>
    		<br/>
    		<h4>jquery plugins</h4>
+   			<a href="api/jquery plugins/index.html" target="_blank">&nbsp;&nbsp;&nbsp;Jquery Plugins Index</a>
+   			<br/>
    			<a href="api/jquery plugins/layout/demos/index.html" target="_blank">&nbsp;&nbsp;&nbsp;1.Jquery Layout</a>
    			<br/>
    			<a href="api/jquery plugins/jqueryui/index.html" target="_blank">&nbsp;&nbsp;&nbsp;2.Jquery UI</a>

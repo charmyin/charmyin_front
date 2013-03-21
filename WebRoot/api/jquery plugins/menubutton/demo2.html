@@ -1,0 +1,116 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Button - Split button</title>
+  <link rel="stylesheet" href="../jqueryui/css/smoothness/jquery-ui-1.10.2.custom.css" />
+  <script src="../jqueryui/js/jquery-1.9.1.js"></script>
+  <script src="../jqueryui/js/jquery-ui-1.10.1.custom.js"></script>
+  <style>
+    .ui-menu { position: absolute; width: 200px; }
+    body {
+		font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+		font-size: 72.5%;
+	}
+  </style>
+  <script>
+  $(function() {
+  	
+  	$("#menuset").buttonset();
+  	
+  	$(".menubtn").each(function(index){
+  		var menu = $("#"+$(this).attr('menuId'));
+  		//var menuElement = $(menu);
+  		$(this).button({
+	          text: true,
+	          icons: {
+	            secondary: "ui-icon-circle-triangle-e"
+	          }
+	        })
+	        .mouseover(function() {
+	          var menu = $("#"+$(this).attr('menuId')).show("slow").position({
+	            my: "left top",
+	            at: "left bottom",
+	            of: this
+	          });
+	          $( document ).one( "click", function() {
+	            $(".menu").hide("slow");
+	          });
+	          return false;
+	        }).mouseleave(function(){
+	        	menu.hide();
+	        });
+	         
+	        $("#"+$(this).attr('menuId')).hide().menu();
+	        
+	        $(".menu").mouseover(function(){
+	         	$(this).show();
+	        }).mouseleave(function(){
+	        	$(this).hide("slow").menu("collapseAll",null, true);
+	        });
+  	});
+  	
+    
+     
+  });
+  </script>
+</head>
+<body>
+<div>
+  <div id="menuset">
+    <button class="menubtn" id="menubtn1" menuId="menu1">Zoom In</button>
+    <button class="menubtn" id="menubtn2" menuId="menu2">Zoom out</button>
+    <button class="menubtn" id="menubtn3" menuId="menu3">Zoom out</button>
+  </div>
+  
+  <ul id="menu1" class="menu">
+	  <li><a href="#"><span class="ui-icon ui-icon-disk"></span>Save</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomin"></span>Zoom In</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</a></li>
+	  <li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-print"></span>Print...</a></li>
+	  <li>
+	    <a href="#">Playback</a>
+	    <ul>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-start"></span>Prev</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-stop"></span>Stop</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-play"></span>Play</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-end"></span>Next</a></li>
+	    </ul>
+	  </li>
+	</ul>
+	<ul id="menu2" class="menu">
+	  <li><a href="#"><span class="ui-icon ui-icon-disk"></span>Save</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomin"></span>Zoom In</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</a></li>
+	  <li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-print"></span>Print...</a></li>
+	  <li>
+	    <a href="#">Playback</a>
+	    <ul>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-start"></span>Prev</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-stop"></span>Stop</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-play"></span>Play</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-end"></span>Next</a></li>
+	    </ul>
+	  </li>
+	</ul>
+	<ul id="menu3" class="menu"> 
+	  <li><a href="#"><span class="ui-icon ui-icon-disk"></span>Save</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomin"></span>Zoom In</a></li>
+	  <li><a href="#"><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</a></li>
+	  <li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-print"></span>Print...</a></li>
+	  <li>
+	    <a href="#">Playback</a>
+	    <ul>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-start"></span>Prev</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-stop"></span>Stop</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-play"></span>Play</a></li>
+	      <li><a href="#"><span class="ui-icon ui-icon-seek-end"></span>Next</a></li>
+	    </ul>
+	  </li>
+	</ul>
+</div>
+ 
+ 
+</body>
+</html>

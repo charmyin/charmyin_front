@@ -11,18 +11,18 @@
 			#div_index div[data-role=header]{
 			}
 			#div_index div[data-role=header] h1 img{
-				width:40px;
-				height:40px;
+				/**width:40px;
+				height:40px;**/
 			}
 			#div_index div[data-role=header] p{
-				text-align:center;
+				/**text-align:center;
 				font-weight:bold;
 				font-size:22px;
 				padding:0;
-				margin:0;
+				margin:0;**/
 			}
 			.div_toprighttitle {
-				-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
+				/*-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
 				-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
 				box-shadow:rgba(0, 0, 0, 0.4) 0 0 6px;
 				padding: 0;
@@ -41,30 +41,101 @@
 				-webkit-transform: rotate(45deg);
 				position: absolute;
 				right: -78px;
-				z-index: 10;
+				z-index: 10;*/
 			}
 		</style>
 	</head>
 	<body>
 		<div data-role="page" id="div_index" data-theme="d">
-			<div class="div_toprighttitle">
-				Zebone ©
-			</div>
-			<div data-role="header"  >
+			<div data-role="header" data-position="fixed">
+				<!--<div class="div_toprighttitle">
+					Zebone ©
+				</div>
 				<h1><img src="img/logo.png"/></h1>
-				<p>健康小屋</p>
+				-->
+				<h1>移动随访</h1> 
+				<a href="#login" data-role="button" data-icon="grid" data-theme="a">登录</a>
+				<a href="#regist" data-role="button" data-icon="edit" data-theme="e">注册</a>
+				<!--此处为带有图表的导航-->
+				<!--<div data-role="navbar" data-iconpos="top" style="margin:0;padding:0;">
+					<ul >
+						<li><a href="#" class="ui-btn-active" data-icon="home" data-iconpos="right" >首页&gt;&gt;</a></li>
+						<li><a href="#" data-icon="edit" data-iconpos="right" >新闻通告&gt;&gt;</a></li>
+						<li><a href="#" data-icon="bars" data-iconpos="right" >体育类新闻&gt;&gt;</a></li>
+						<li><a href="#" data-icon="gear" data-iconpos="right" >26家单位首次联手严管南京南站</a></li>
+					</ul>
+				</div>-->
+				<div data-role="navbar" style="margin:0;padding:0;" data-theme="c">
+					<ul>
+						<li><a href="#"  data-theme="c" class="ui-btn-active">首页&gt;&gt;</a></li>
+						<li><a href="#" data-theme="c">新闻通告&gt;&gt;</a></li>
+						<li><a href="#"  data-theme="c">体育新闻&gt;&gt;</a></li>
+						<li><a href="#"  data-theme="c">26家单位首次联手严管南京南站</a></li>
+					</ul>
+				</div>
 			</div>
-			<div data-role="content" style="padding-top:8px;">
-				<p style="text-align:center;margin:0px;">
-					<a href="#" data-role="button" data-icon="grid" data-iconpos="top" data-inline="true" style="width:40%;margin:0px;" data-theme="b">登录</a>
-					<a href="#" data-role="button" data-icon="edit" data-iconpos="top" data-inline="true" style="width:30%;margin:0px;" data-theme="e">注册</a>
-				</p>
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#bar">View internal page</a></li>
-					<li><a href="testdemo/newpage.html">New Page</a></li>
+			<div data-role="content"  style="padding-top:2px;">
+				
+				<ul data-role="listview" data-icon="" style="font-size:100%; margin-top:5px; margin-bottom:5px;" data-inset="true">
+					<li>
+						<a href="#" style="padding-left:90px; max-height:8px;">
+							<img src="img/home/album-bb.jpg"/>
+							<h2 style="font-size:14px;font-weight:bold;">常州天气&nbsp;&nbsp;2013-2-12</h2>
+							<p>
+								<span>天气:晴转多云/&nbsp;</span>
+								<span>温度:16°C~13°C</span><br/> 
+								<span>空气质量:良好/&nbsp;</span>
+								<span>风速:东南风3级<span>
+						    </p>
+						</a>
+					</li>
+				</ul>
+				
+				<ul data-role="listview" data-count-theme="d" data-inset="true" style="margin-top:4px; margin-bottom:2px;">
+					<li data-role="list-divider">
+						健康通告
+						<a href="#login" >
+							<span class="ui-li-count">24</span> 		
+							<span style="float:right;">更多</span>
+						</a>
+						
+					</li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">吴仁宝临终嘱托全家要坚信共产党</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">26家单位首次联手严管南京南站</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">朱镕基数位助手执掌财经部委</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">尚德无力偿还71亿巨债破产</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">传击剑掌门人将任排管中心主任</a></li>
+				</ul>
+				<ul data-role="listview" data-count-theme="c" data-inset="true" style="margin-top:4px;">
+					<li data-role="list-divider">
+						健康新闻
+						<a href="#login" >
+							<span class="ui-li-count">224</span> 		
+							<span style="float:right;">更多</span>
+						</a>
+					</li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">冰壶世锦赛-中国赛末5分大逆转挫美国</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">传击剑掌门人将任排管中心主任</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">英媒:小贝似任污水厂大使 </a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">尚德无力偿还71亿巨债破产</a></li>
+					<li><a href="testdemo/newpage.html" style="height:10px;line-height:10px;">7旬老汉4年中俩200万无数万元奖 500万得主执意不要奖金</a></li>
 				</ul>
 			</div>
-			<div data-role="footer">
+			<div data-role="footer" data-position="fixed">
+				<h4>Powered by  Zebone © 2011-2013  &nbsp;</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" id="login">
+			<div data-role="header">
+				<h1>登录</h1>
+			</div>
+			
+			<div data-role="content">
+				
+			</div>
+			
+			<div data-role="footer" data-theme="b">
 				<h4>Powered by  Zebone © 2011-2013  &nbsp;</h4>
 			</div>
 		</div>
